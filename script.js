@@ -2,10 +2,25 @@ tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#8B1042', /* Darker Rose */
-            secondary: '#1D0B24', /* Very Dark Purple */
+            primary: '#8B1042',
+            accent: '#C0174F',
+            secondary: '#2C1A1D',
             tertiary: '#FFFFFF',
-            accent: '#B8155A' /* Brighter Rose for hover states and accents */
+            muted: '#E8C4CF',
+            surface: '#FDF6F7',
+            'surface-2': '#F5E8EB',
+            neutral: {
+              50:  '#FAF8F8',
+              100: '#F2ECEE',
+              200: '#E4D6DA',
+              300: '#CEBAC0',
+              400: '#B09AA2',
+              500: '#8C7A82',
+              600: '#6B5C63',
+              700: '#4E4148',
+              800: '#352B31',
+              900: '#1E1518',
+            },
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
