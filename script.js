@@ -146,8 +146,8 @@ const CONTENT = {
       document.getElementById('team-grid').innerHTML = d.team.members.map(m => `
         <div class="p-8 border border-gray-100 rounded-[var(--radius)] bg-white shadow-sm text-center hover:bg-tertiary hover:shadow-xl transition-all duration-300">
           <h4 class="font-serif text-3xl font-bold text-primary mb-1">${m.n}</h4>
-          <p class="text-xs uppercase tracking-widest text-accent font-bold mb-4">${m.r}</p>
           <div class="w-12 h-[2px] bg-gray-200 mx-auto mb-4"></div>
+          <p class="text-xs uppercase tracking-widest text-accent font-bold mt-4">${m.r}</p>
         </div>
       `).join('');
 
