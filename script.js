@@ -193,7 +193,7 @@ const CONTENT = {
       initRotator();
 
       const track = document.getElementById('clients-grid');
-      track.innerHTML = [...CLIENT_LOGOS, ...CLIENT_LOGOS].map(url => `<img src="${url}" class="h-10 md:h-12 grayscale opacity-40">`).join('');
+      track.innerHTML = [...CLIENT_LOGOS, ...CLIENT_LOGOS, ...CLIENT_LOGOS].map(url => `<img src="${url}" class="h-10 md:h-12 grayscale opacity-40">`).join('');
 
       gsap.to("#nav", { opacity: 1, y: 0, duration: 1, ease: "expo.out" });
       ScrollTrigger.batch(".reveal", { onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, duration: 1, stagger: 0.15 }) });
